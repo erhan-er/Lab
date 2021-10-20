@@ -18,4 +18,16 @@ public class StudentSearch {
                 return student;
         throw new Exception("There is no student with the given name!");
     }
+
+         public 
+                ArrayList<Student> result = new ArrayList<Stu
+                for (Student  student : 
+                        if (student.getName().equ
+                                resu
+             
+                if (result.isEm
+                        throw new Exception("There is no student with the gi
+         
+                return
+        }
 }
