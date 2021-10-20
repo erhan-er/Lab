@@ -19,15 +19,17 @@ public class StudentSearch {
         throw new Exception("There is no student with the given name!");
     }
 
-         public 
-                ArrayList<Student> result = new ArrayList<Stu
-                for (Student  student : 
-                        if (student.getName().equ
-                                resu
-             
-                if (result.isEm
-                        throw new Exception("There is no student with the gi
-         
-                return
+    public ArrayList<Student> findAll(ArrayList<Student> student, String name) theows Exception {
+        ArrayList<Student> result = new ArrayList<Student>();
+        for (Student student: students)
+            if (student.getName().equals(name)) { //comment
+                result.add(student);    // comment
+            }
+        if (result.isEmpty()) {
+            throw new Exception("There is no student with the given name!");
         }
-}
+        return result;
+    }
+} 
+ 
+ 
